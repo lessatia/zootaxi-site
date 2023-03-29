@@ -1,0 +1,140 @@
+.footer {
+    padding-bottom: 0px;
+    background-color: var(--bg10);
+    border-radius: 25px 25px 0 0;
+}
+
+.footer__container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr max-content;
+    gap: 15px 10px;
+    grid-template-areas:
+'logo dog nav nav'
+'social dog contact rules';
+}
+
+.logo__text_footer {
+    text-align: start;
+    grid-area: logo;
+    font-size: 25px;
+}
+
+.footer__dog {
+    grid-area: dog;
+}
+
+.contact__container_footer {
+    grid-area: social;
+    justify-self: left;
+
+
+}
+
+.social__container_footer {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__container_footer {
+    grid-area: nav;
+    font-size: 16px;
+}
+
+.footer__rules {
+    grid-area: rules;
+    font-size: 14px;
+}
+
+.footer__contact {
+    grid-area: contact;
+}
+
+.contact__phone {
+    font-size: 20px;
+    text-align: center;
+}
+
+.social {
+    width: 20px;
+}
+
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link_contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.footer__copyright {
+    margin-top: 8px;
+    background-color: rgba(99, 99, 99, 0.2);
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 0;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    text-align: center;
+}
+
+@media (max-width: 1240px) {
+    .footer__container {
+        justify-items: center;
+        grid-template-columns:  1fr 1fr;
+        gap: 15px 100px;
+        grid-template-areas:
+' nav nav'
+'logo social    '
+' dog contact '
+' dog  rules ';
+    }
+    .footer__rules {
+        justify-self: left;
+    }
+
+    .footer__contact {
+        justify-self: left;
+    }
+    .logo__text_footer {
+        justify-self: right;
+    }
+
+    .footer__dog {
+        justify-self: right;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer__container {
+               gap: 15px 60px;
+}}
+
+@media (max-width: 575px) {
+    .footer__container {
+justify-content: center;
+
+        grid-template-columns:   max-content;
+        gap: 15px 100px;
+        grid-template-areas:
+' nav'
+' social'
+'contact'
+' logo'
+'dog '
+' rules';
+    }
+    .footer__rules, .footer__contact, .logo__text_footer, .footer__dog, .contact__container_footer {
+        justify-self: center;
+        text-align: center;
+    }
+
+}

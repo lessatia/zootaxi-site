@@ -1,0 +1,95 @@
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.gps__container {
+    display: flex;
+    align-items: center;
+}
+
+.gps__icon {
+    margin-right: 13px;
+}
+
+.gps__text {
+    font-size: 20px;
+}
+
+.logo__container {
+    margin-bottom: 14px;
+}
+
+.logo__text {
+    margin: 0;
+    color: #B62F2F;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*.nav__link:active{*/
+/*    color: #0052a0;*/
+/*    text-decoration: none;*/
+/*    border-bottom: 2px solid #26ccff;*/
+/*    background: transparent;}*/
+.nav__list > .active > a {color: #0052a0;
+    text-decoration: none;
+    border-bottom: 2px solid #26ccff;
+    background: transparent;}
+
+.nav__list {
+    display: flex;
+}
+.nav__item{margin-bottom:8px;}
+
+.nav__link {
+    padding: 8px;
+    border-bottom: 2px solid #1366b4;
+
+    /*text-transform: uppercase;*/
+
+}
+.nav__link:hover{ background: linear-gradient(to right, rgba(0, 143, 223, 0.2), rgba(19, 102, 180, 0.4));
+    color: #ffffff;}
+
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+.contact__container {
+    margin-bottom: 10px;
+}
+
+.social__container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact__phone {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.social {width:25px;
+    margin-right: 10px;
+}
+
+.social:last-child {
+    margin-right: 0;
+}
+@media (max-width: 991px) {.gps__container {
+    display: none;
+}}
+@media (max-width: 767px) {
+    .header__container{flex-direction: column}
+    .social__container{justify-content: center;}
+}
+@media (max-width: 575px) {
+    .nav__list{flex-direction: column;
+    align-items: center;}
+}
