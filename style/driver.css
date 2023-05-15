@@ -18,8 +18,6 @@ width:100%;
     height: 100%;
     border:1px solid var(--bg10);
     border-radius: var(--border);
-    /*object-fit: cover;*/
-    /*object-position: center;*/
 overflow: hidden;}
 .experience{grid-area: experience;
     padding:23px;
