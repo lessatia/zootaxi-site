@@ -41,32 +41,3 @@ window.onload = function() {
         });
     }
 }
-
-
-
-//
-//
-// btnSubmit.addEventListener('input', (event) => {
-//     if (calcForm.width.value > 0 && calcForm.length.value > 0) {
-//         btnSubmit.disabled = false
-//     } else {
-//         btnSubmit.disabled = true
-//     }
-// });
-//
-//
-// calcForm.addEventListener('submit', (event) => {
-//     event.preventDefault();
-//     console.log(calcForm.width.value);
-//     console.log(calcForm.length.value);
-//     console.log(calcForm.tariff.value);
-//     if (calcForm.width.value > 0 && calcForm.length.value > 0) {
-//         const square = calcForm.width.value * calcForm.length.value;
-//         const price = square * tariff[calcForm.tariff.value];
-//
-//         calcResultWrapper.style.display = 'block';
-//         totalSquare.textContent = `${square} кв м`;
-//         totalPrice.textContent = `${price} руб`;
-//     }
-//
-// })

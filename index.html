@@ -2,9 +2,7 @@
 <html lang="ru">
 <head>
 
-    <!--    figma__project-->
-    <!--    https://www.figma.com/file/WpMVN8vQWDTnYAajIu1pHm/Zootaxi.bel-(Copy)-(Copy)?node-id=14-181&t=AEdldFp1bAz4fPYk-0-->
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/normalize.css">
@@ -13,22 +11,71 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/modal_test_mode.css">
 
-        <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="style/hero.css">
     <link rel="stylesheet" href="style/transportation.css">
     <link rel="stylesheet" href="style/driver.css">
     <link rel="stylesheet" href="style/application.css">
     <link rel="stylesheet" href="style/services.css">
 
-    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>-->
-    <!--    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>-->
-    <script src="js/script.js"></script>
-    <title>Zootaxi.БЕЛ</title>
+
+    <meta property="og:title" content="Зоотакси.БЕЛ - перевозка домашних животных в Минске и по Беларуси" />
+    <meta property="og:url" content="https://зоотакси.бел" />
+    <meta property="og:description" content="Перевозка собак, кошек и других питомцев всех пород и характеристик. Перевозка с хозяином и БЕЗ. Квалифицированный водитель с профильной подготовкой. Собственный спецтранспорт, инвентарь премиум-класса. Санитарная обработка и дезинфекция после каждой перевозки. С комфортом в любую точку Минска и Беларуси." />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description" content="ЗООТАКСИ БЕЛАРУСЬ. С комфортом в любую точку Минска и Беларуси. +375 25 7072527 Обратный звонок. Доступный и качественный сервис. Перевозка собак, кошек и других питомцев всех пород и характеристик. Перевозка с хозяином и БЕЗ. Квалифицированный водитель с профильной подготовкой. Собственный спецтранспорт, инвентарь премиум-класса. Санитарная обработка и дезинфекция после каждой перевозки. С комфортом в любую точку Минска и Беларуси." />
+    <meta name="keywords" content="Перевозка животных Минск,Беларусь
+            Перевозка собак Минск,
+            Доставка животных Минск
+            Перевозка для кота,
+            Перемещение животных,
+            Перевозка домашних животных,
+            Такси для животных,
+            Такси для животных в Минске,
+            Транспортировка животных,
+            Переноска для кота,
+            Переноска для собак,
+            Зоотакси,
+            Зоотакси Минск,
+            Ветклиника,
+            Ветеринар,
+            Без хозяина,
+            Ветклиника Минск,
+            Сябар,
+            Кинолог,
+            Кинолог Минск,
+            Доставка кормов,
+            Ветеринар на дом Минск,
+            Выставка животных,
+            Спецтранспорт,
+            Спецтранспорт для животных,
+            Доставка собак,
+            Срочный вызов,
+            Доставка котов,
+            Как перевозить собак,
+            Как перевозить кота,
+            Фотограф животных,
+            Перевозка собак,
+            Перевозка кошек,
+            Такси для собак,
+            Такси для кошек" />
+    <link rel="canonical" href="https://зоотакси.бел">
+    <title>Зоотакси.БЕЛ - перевозка домашних животных в Минске и по Беларуси</title>
 </head>
 <body>
 <header class="header section-offset">
 <!--    <h1 class="visually-hidden">Зоотакси Беларусь перевозка животных</h1>-->
     <div class="container header__container">
+<!--        test mode modal-->
+        <div class="modal__container active">
+
+                <div class="popup">
+                    <svg class="close-popup" onclick="closeModalWindow()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#2982ff" d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+                    <p class="test ">Сайт работает в&nbsp;тестовом режиме</p>
+                </div>
+        </div>
+
         <div class="gps__container">
             <svg class="gps__icon" width="37" height="37" viewBox="0 0 37 37" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +94,8 @@
             <p class="gps__text">Минск</p>
         </div>
         <div class="logo__container">
-            <p class="logo__text">Зоотакси.Бел</p>
+            <p class="logo__text">Зоотакси.Бел
+            </p>
             <nav class="nav__container">
                 <ul class="nav__list list-reset">
                     <li class="nav__item active"><a href="#transport" class="nav__link link">Транспортировка</a></li>
@@ -61,9 +109,12 @@
                 <span>+375&nbsp;25&nbsp;7072527</span>
             </a></p>
             <div class="social__container">
-                <img src="assets/icons/telegram.svg" alt="telegram" class="social social__telegram">
-                <img src="assets/icons/whatsapp.svg" alt="whatsapp" class="social social__telegram">
-                <img src="assets/icons/viber.svg" alt="viber" class="social social__telegram">
+                <a href="https://t.me/zootaxiby" target="_blank" class="social social__telegram"><img src="assets/icons/telegram.svg" alt="telegram" class="social social__telegram">
+                </a>
+                <a href="https://wa.me/375447144111" target="_blank" class="social social__telegram"> <img src="assets/icons/whatsapp.svg" alt="whatsapp" class="social social__telegram">
+                </a>
+                <a href="https://msng.link/o/?375447144111=vi" target="_blank" class="social social__telegram"> <img src="assets/icons/viber.svg" alt="viber" class="social social__telegram">
+                </a>
             </div>
         </div>
     </div>
@@ -205,53 +256,6 @@
             </button>
         </div>
     </section>
-    <!--    <section id="calc" class="calc section-offset ">-->
-    <!--        <div class="container calc__container">-->
-    <!--            <div class="calc__content gray-block">-->
-    <!--                <h2 class="calc__title title">Рассчитайте стоимость</h2>-->
-    <!--                <form action="" class="calc__form js-calc-form">-->
-    <!--                    <fieldset class="calc__fieldset calc__fieldset_size">-->
-    <!--                        <label class="calc__wrapper-input calc__wrapper-input-size">-->
-    <!--                            <span class="calc__text">Ширина помещения, м</span>-->
-    <!--                            <input type="number" class="calc__input-number" name="width" required>-->
-    <!--                        </label>-->
-    <!--                        <label class="calc__wrapper-input calc__wrapper-input-size">-->
-    <!--                            <span class="calc__text">Длина помещения, м</span>-->
-    <!--                            <input type="number" class="calc__input-number" name="length" required>-->
-    <!--                        </label>-->
-    <!--                    </fieldset>-->
-    <!--                    <fieldset class="calc__fieldset calc__fieldset-tariff">-->
-    <!--                        <legend class="calc__text calc__text_legend">Тариф</legend>-->
-    <!--                        <label class="calc__wrapper-input calc__wrapper-input-tariff">-->
-    <!--                            <input type="radio" name="tariff" class="calc__input-radio" value="economy">-->
-    <!--                            <span class="calc__label-radio">Эконом</span>-->
-    <!--                        </label>-->
-    <!--                        <label class="calc__wrapper-input calc__wrapper-input-tariff">-->
-    <!--                            <input type="radio" name="tariff" class="calc__input-radio" value="comfort" checked>-->
-    <!--                            <span class="calc__label-radio">Комфорт</span>-->
-    <!--                        </label>-->
-    <!--                        <label class="calc__wrapper-input calc__wrapper-input-tariff">-->
-    <!--                            <input type="radio" name="tariff" class="calc__input-radio" value="premium">-->
-    <!--                            <span class="calc__label-radio">Премиум</span>-->
-    <!--                        </label>-->
-    <!--                    </fieldset>-->
-    <!--                    <button class="button calc__submit js-submit" type="submit" disabled>Рассчитать</button>-->
-    <!--                </form>-->
-    <!--            </div>-->
-    <!--            <div class="calc__total">-->
-    <!--                <div class="calc__result-wrapper">-->
-    <!--                    <p class="calc__result">-->
-    <!--                        <span class="calc__text">Площадь</span>-->
-    <!--                        <span class="calc__result-text js-square">35 кв м</span>-->
-    <!--                    </p>-->
-    <!--                    <p class="calc__result">-->
-    <!--                        <span class="calc__text">Примерная стоимость</span>-->
-    <!--                        <span class="calc__result-text js-total-price">42590 руб</span>-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
 </main>
 <footer class="footer section-offset">
     <div class="container footer__container">
@@ -262,9 +266,12 @@
                 <span>+375&nbsp;25&nbsp;7072527</span>
             </a></p>
             <div class="social__container_footer">
-                <img src="assets/icons/telegram.svg" alt="telegram" class="social social__telegram">
-                <img src="assets/icons/whatsapp.svg" alt="whatsapp" class="social social__telegram">
-                <img src="assets/icons/viber.svg" alt="viber" class="social social__telegram">
+                <a href="https://t.me/zootaxiby" target="_blank" class="social social__telegram"><img src="assets/icons/telegram.svg" alt="telegram" class="social social__telegram">
+                </a>
+                <a href="https://wa.me/375447144111" target="_blank" class="social social__telegram"> <img src="assets/icons/whatsapp.svg" alt="whatsapp" class="social social__telegram">
+                </a>
+                <a href="https://msng.link/o/?375447144111=vi" target="_blank" class="social social__telegram"> <img src="assets/icons/viber.svg" alt="viber" class="social social__telegram">
+                </a>
             </div>
         </div>
         <nav class="nav__container_footer">
@@ -292,13 +299,18 @@
                     <path d="M23.7508 18.3663C23.7508 20.1174 22.8851 21.4029 21.3701 21.4029C20.6159 21.4029 19.8682 21.0618 19.6911 20.4322H19.6255C19.4485 21.0553 18.8123 21.3963 18.104 21.3963C16.9497 21.3963 16.2152 20.5831 16.2152 19.2452V18.4516C16.2152 17.1858 16.9366 16.3529 18.104 16.3529C18.9828 16.3529 19.4091 16.8513 19.5337 17.2973H19.5796V16.4447H20.9372V19.7305C20.9372 20.1371 21.2061 20.3601 21.5537 20.3601C22.0259 20.3601 22.5112 19.737 22.5112 18.2745V18.0974C22.5112 16.1824 21.0881 14.6084 18.7861 14.6084H18.727C16.3529 14.6084 14.7658 16.2086 14.7658 18.6943V18.9304C14.7658 21.7308 16.6218 22.9113 18.6221 22.9113H18.6877C19.4485 22.9113 20.0912 22.8064 20.4585 22.6424V23.7377C20.1305 23.8885 19.4944 24 18.6024 24H18.5368C15.6577 24 13.5 22.2292 13.5 18.9697V18.6483C13.5 15.5397 15.6315 13.5 18.727 13.5H18.7795C21.9603 13.5 23.7508 15.6446 23.7508 18.0515V18.3663ZM17.6908 18.6811V19.0222C17.6908 19.901 18.0319 20.2224 18.5631 20.2224C19.0287 20.2224 19.4091 19.9666 19.4091 19.1074V18.5565C19.4091 17.7826 18.9959 17.4941 18.55 17.4941C18.0319 17.4941 17.6908 17.8613 17.6908 18.6811Z"
                           fill="currentColor"/>
                 </svg>
-                <span>zootaxi.bel@gmail.com</span>
+                <span href="mailto:zootaxi.bel@gmail.com">zootaxi.bel@gmail.com</span>
             </a>
         </p>
     </div>
     <p class="footer footer__copyright"> Зоотакси.бел &copy; Все&nbsp;права&nbsp;защищены.<br> Любое копирование
-        материалов, опубликованных на&nbsp;сайте запрещено и&nbsp;преследуется по&nbsp;закону.</p>
-
+        материалов, опубликованных на&nbsp;сайте запрещено и&nbsp;преследуется по&nbsp;закону.
+    </p>
 </footer>
+
+<script src="js/script.js"></script>
+<script src="js/modal_test.js"></script>
+
+
 </body>
 </html>
