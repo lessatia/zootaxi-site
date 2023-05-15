@@ -23,6 +23,7 @@
     background: rgba(0,0,0,0.5);
     display:none;
 }
+
 .modal__container.active{
     display:block;
 }
