@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/modal_test_mode.css">
 
-        <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="style/hero.css">
     <link rel="stylesheet" href="style/transportation.css">
     <link rel="stylesheet" href="style/driver.css">
     <link rel="stylesheet" href="style/application.css">
     <link rel="stylesheet" href="style/services.css">
 
-   <script src="js/script.js"></script>
+
     <meta property="og:title" content="Зоотакси.БЕЛ - перевозка домашних животных в Минске и по Беларуси" />
     <meta property="og:url" content="https://зоотакси.бел" />
     <meta property="og:description" content="Перевозка собак, кошек и других питомцев всех пород и характеристик. Перевозка с хозяином и БЕЗ. Квалифицированный водитель с профильной подготовкой. Собственный спецтранспорт, инвентарь премиум-класса. Санитарная обработка и дезинфекция после каждой перевозки. С комфортом в любую точку Минска и Беларуси." />
@@ -66,6 +67,15 @@
 <header class="header section-offset">
 <!--    <h1 class="visually-hidden">Зоотакси Беларусь перевозка животных</h1>-->
     <div class="container header__container">
+<!--        test mode modal-->
+
+        <div class="modal__container active">
+                <div class="popup">
+                    <svg class="close-popup" onclick="closeModalWindow()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#2982ff" d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+                    <p class="test ">Сайт работает в&nbsp;тестовом режиме</p>
+                </div>
+        </div>
+
         <div class="gps__container">
             <svg class="gps__icon" width="37" height="37" viewBox="0 0 37 37" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
@@ -84,7 +94,8 @@
             <p class="gps__text">Минск</p>
         </div>
         <div class="logo__container">
-            <p class="logo__text">Зоотакси.Бел</p>
+            <p class="logo__text">Зоотакси.Бел
+            </p>
             <nav class="nav__container">
                 <ul class="nav__list list-reset">
                     <li class="nav__item active"><a href="#transport" class="nav__link link">Транспортировка</a></li>
@@ -296,5 +307,10 @@
         материалов, опубликованных на&nbsp;сайте запрещено и&nbsp;преследуется по&nbsp;закону.
     </p>
 </footer>
+
+<script src="js/script.js"></script>
+<script src="js/modal_test.js"></script>
+
+
 </body>
 </html>
